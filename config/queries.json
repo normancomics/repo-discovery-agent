@@ -1,0 +1,34 @@
+{
+  "perQueryLimit": 20,
+  "topN": 10,
+  "queries": {
+    "biblefi": [
+      "topic:base topic:defi language:TypeScript stars:>5",
+      "topic:farcaster topic:miniapp stars:>3",
+      "topic:farcaster-frame OR topic:farcaster-miniapp stars:>3",
+      "topic:noir topic:zk stars:>3",
+      "topic:circom topic:privacy stars:>5",
+      "tithing OR \"biblical\" crypto in:description,readme",
+      "christian blockchain OR \"faith\" web3 in:description",
+      "topic:smart-contract-audit topic:defi stars:>10",
+      "topic:erc20 topic:base language:Solidity stars:>5"
+    ],
+    "watcher-tech": [
+      "topic:mcp topic:blockchain stars:>3",
+      "topic:model-context-protocol topic:ethereum stars:>3",
+      "x402 payments in:name,description,readme",
+      "topic:base topic:agent stars:>3",
+      "erc-8004 agent in:description,readme",
+      "topic:superfluid stars:>3",
+      "topic:monero topic:bridge stars:>3",
+      "topic:ai-agents topic:evm stars:>5",
+      "topic:smart-contract-security topic:evm stars:>10"
+    ]
+  },
+  "curatedLists": [
+    "topic:awesome-list farcaster",
+    "topic:awesome-list base ethereum-l2",
+    "topic:awesome-list zero-knowledge",
+    "topic:awesome-list mcp"
+  ]
+}

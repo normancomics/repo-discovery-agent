@@ -1,0 +1,20 @@
+[
+  {
+    "id": "biblefi",
+    "name": "BibleFI",
+    "repo": "normancomics/BibleFI",
+    "description": "Biblically-based DeFi app on Base, deployed as a Farcaster mini-app. TypeScript, Solidity, and Noir ZK circuits for privacy-preserving tithing and wisdom scoring.",
+    "tags": ["Base", "Farcaster", "DeFi", "ZK-proofs", "Noir circuits", "tithing", "Web3 finance", "Christian tech", "privacy", "ERC tokens"],
+    "languages": ["TypeScript", "Solidity", "Noir"],
+    "outreachGoal": "Find Base/Farcaster/DeFi/ZK projects, lists and communities where BibleFI is a relevant showcase."
+  },
+  {
+    "id": "watcher-tech",
+    "name": "Watcher Tech - Blockchain Grimoire",
+    "repo": "normancomics/Watcher_Tech-Blockchain_Grimoire",
+    "description": "Sovereign blockchain ecosystem with techno-occult frameworks, an MCP oracle server, Level 13 sigil NFTs, x402 payment rails on Base, and RAG-AGI agents.",
+    "tags": ["Base", "Farcaster", "MCP", "x402 payments", "ERC-8004 agents", "security", "blockchain grimoire", "sovereign", "ZK-shielded", "Superfluid streams", "Monero XMR bridge"],
+    "languages": ["TypeScript", "Solidity", "Python"],
+    "outreachGoal": "Find repos that would benefit from MCP integration or x402 payments."
+  }
+]

@@ -1,0 +1,5 @@
+{
+  "system": "You write concise, honest, non-spammy copy for a human to review. Never invent facts about the target repo. Never pressure the reader. Output plain text only.",
+  "profileSummary": "Summarize this project in 2 sentences for a discovery report, then list up to 5 extra search keywords.\n\nProject: {{name}}\nDescription: {{description}}\nTags: {{tags}}",
+  "outreach": "Draft a short (under 80 words), friendly, opt-in-style note from the maintainer of {{name}} ({{description}}) to the maintainers of {{target}} ({{targetDescription}}). Explain a concrete mutual-benefit angle ({{angle}}), make no demands, and make clear they can ignore it. This is a draft for manual review; do not mention that it was AI-written."
+}
