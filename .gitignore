@@ -147,3 +147,11 @@ vite.config.ts.timestamp-*
 
 # Turbo Repo
 .turbo
+
+# Generated reports and build output
+reports/
+*.env
+.DS_Store
+.idea/
+.vscode/
+coverage/
