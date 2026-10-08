@@ -5,7 +5,8 @@
   "type": "module",
   "scripts": {
     "build": "tsc",
-    "discover": "tsx src/index.ts"
+    "discover": "tsx src/index.ts",
+    "test": "tsx --test test/*.test.ts"
   },
   "devDependencies": {
     "@types/node": "^20.14.0",

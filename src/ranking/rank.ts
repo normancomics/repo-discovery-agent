@@ -33,7 +33,8 @@ export function scoreRepo(repo: Repo, now = Date.now()): ScoredRepo {
     keywords: r(keywords), popularity: r(popularity), activity: r(activity),
     professionalism: r(professionalism), adoption: r(adoption),
   };
-  const score = r(keywords + popularity + activity + professionalism + adoption);
+  // component caps sum to 110, so normalize to a 0-100 scale
+  const score = r(((keywords + popularity + activity + professionalism + adoption) / 110) * 100);
   return { ...repo, score, breakdown, matchedKeywords: matched };
 }
 
