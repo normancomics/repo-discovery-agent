@@ -1,0 +1,45 @@
+name: Discovery
+
+on:
+  schedule:
+    - cron: "0 0 * * 0"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  issues: write
+
+jobs:
+  discover:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+      - run: npm install
+      - run: npm test
+      - name: Run discovery
+        run: npm run discover
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_OWNER: normancomics
+          REPORT_PATH: reports/discovery-report.md
+      - uses: actions/upload-artifact@v4
+        with:
+          name: discovery-report
+          path: reports/discovery-report.md
+      - name: Create issue with report summary
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          {
+            head -c 60000 reports/discovery-report.md
+            echo
+            echo "---"
+            echo "Full report: see the \`discovery-report\` artifact on [this run]($GITHUB_SERVER_URL/$GITHUB_REPOSITORY/actions/runs/$GITHUB_RUN_ID)."
+          } > /tmp/issue-body.md
+          gh issue create \
+            --repo "$GITHUB_REPOSITORY" \
+            --title "Discovery report $(date -u +%Y-%m-%d)" \
+            --body-file /tmp/issue-body.md
