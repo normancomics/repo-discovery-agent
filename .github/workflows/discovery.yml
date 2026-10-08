@@ -33,7 +33,13 @@ jobs:
         env:
           GH_TOKEN: ${{ github.token }}
         run: |
+          {
+            head -c 60000 reports/discovery-report.md
+            echo
+            echo "---"
+            echo "Full report: see the \`discovery-report\` artifact on [this run]($GITHUB_SERVER_URL/$GITHUB_REPOSITORY/actions/runs/$GITHUB_RUN_ID)."
+          } > /tmp/issue-body.md
           gh issue create \
             --repo "$GITHUB_REPOSITORY" \
             --title "Discovery report $(date -u +%Y-%m-%d)" \
-            --body-file reports/discovery-report.md
+            --body-file /tmp/issue-body.md
