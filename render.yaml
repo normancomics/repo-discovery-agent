@@ -1,0 +1,15 @@
+services:
+  - type: web
+    name: repo-discovery-agent
+    runtime: node
+    plan: free
+    buildCommand: npm install --include=dev && npm run build
+    startCommand: npm start
+    healthCheckPath: /healthz
+    envVars:
+      - key: GITHUB_TOKEN
+        sync: false # optional, set in Render dashboard (public read-only fine-grained token)
+      - key: GITHUB_OWNER
+        value: normancomics
+      - key: PAY_TO
+        value: "0x3d95D4A6DbaE0Cd0643a82b13A13b08921D6ADf7"
