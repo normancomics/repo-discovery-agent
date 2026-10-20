@@ -1,0 +1,16 @@
+{
+  "biblefi": [
+    { "channel": "Farcaster", "where": "/base, /miniapps, /christian casts", "how": "Post your own cast showcasing the mini-app; engage organically." },
+    { "channel": "Awesome lists", "where": "awesome-farcaster, awesome-base", "how": "Open a PR following each list's contribution guide." },
+    { "channel": "Base ecosystem", "where": "Base builder showcases / ecosystem directory", "how": "Submit through the official submission forms." },
+    { "channel": "GitHub Discussions", "where": "Only repos with a Show & Tell / Showcase category", "how": "Post only where showcase posts are explicitly welcome." },
+    { "channel": "Base Discord", "where": "Showcase / builder channels", "how": "Follow the channel rules; no DMs." }
+  ],
+  "watcher-tech": [
+    { "channel": "Farcaster", "where": "/base, /agents, /dev casts", "how": "Cast about the MCP oracle server and x402 rails." },
+    { "channel": "MCP registries", "where": "Official MCP servers list and community directories", "how": "Submit the MCP server via each registry's process." },
+    { "channel": "Awesome lists", "where": "awesome-mcp-servers, awesome-base, awesome-zk", "how": "Open a PR following contribution guidelines." },
+    { "channel": "x402 ecosystem", "where": "x402 community docs / discussions", "how": "List as an integration where invited." },
+    { "channel": "GitHub Discussions", "where": "Only repos that invite project suggestions", "how": "Post only where explicitly welcome." }
+  ]
+}
